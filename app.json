@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "my-new-app",
+    "slug": "my-new-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "This app needs access to your calendar to create alarms.",
+        "NSRemindersUsageDescription": "This app needs access to your reminders to create alarms."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "NOTIFICATIONS",
+        "WAKE_LOCK",
+        "SYSTEM_ALERT_WINDOW"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
